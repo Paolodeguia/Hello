@@ -5,7 +5,7 @@
   <title>For My Valentine ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Confetti -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
   <style>
@@ -129,8 +129,7 @@
 
 <body>
 
-  <!-- Taylor Swift - Lover (Instrumental Link) -->
-  <!-- IMPORTANT: Replace with your own MP3 if you have it -->
+ 
   <audio id="bgMusic" loop>
     <source src="https://www.youtube.com/watch?v=vaS1_M0kQdc&list=RDvaS1_M0kQdc&start_radio=1" type="audio/mpeg">
   </audio>
@@ -163,9 +162,7 @@
   </div>
 
   <script>
-    /* ========================
-       CUSTOMIZE HERE
-    ======================== */
+    
     const floatingPhotos = [
   "https://imgur.com/7LAJysD.jpg",
   "https://imgur.com/qL6cD4K.jpg",
@@ -246,9 +243,6 @@ function spawnFloatingImages() {
       "https://imgur.com/5xgZz8U.jpg",
     ];
 
-    /* ========================
-       Apply Text
-    ======================== */
 
     document.getElementById("name").innerText =
       "Hey " + herName + " 💘";
@@ -256,10 +250,6 @@ function spawnFloatingImages() {
     document.getElementById("message").innerText =
       customMessage + "\nWill you be my Valentine? 💕";
 
-
-    /* ========================
-       No Button Escape
-    ======================== */
 
     function moveNo() {
       const noBtn = document.getElementById("noBtn");
@@ -274,10 +264,6 @@ function spawnFloatingImages() {
       noBtn.style.top = y + "px";
     }
 
-
-    /* ========================
-       Floating Hearts
-    ======================== */
 
     function createHeart() {
       const heart = document.createElement("div");
@@ -295,11 +281,6 @@ function spawnFloatingImages() {
     }
 
     setInterval(createHeart, 400);
-
-
-    /* ========================
-       Yes Button
-    ======================== */
 
     function sayYes() {
 
@@ -319,10 +300,6 @@ function spawnFloatingImages() {
     }
 
 
-    /* ========================
-       Slideshow
-    ======================== */
-
     let index = 0;
 
     function startSlideshow() {
@@ -336,11 +313,6 @@ function spawnFloatingImages() {
       }, 2500);
     }
 
-
-    /* ========================
-       Music (Mobile Fix)
-    ======================== */
-
     document.body.addEventListener("click", () => {
       document.getElementById("bgMusic").play();
     }, { once: true });
@@ -349,3 +321,4 @@ function spawnFloatingImages() {
 
 </body>
 </html>
+
